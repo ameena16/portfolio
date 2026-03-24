@@ -9,10 +9,11 @@ app.use(express.json());
 
 // MySQL connection
 const db = mysql.createConnection({
-    host: 'localhost',
+    host: 'crossover.proxy.rlwy.net',
     user: 'root',
-    password: 'Root/777/999',
-    database: 'ameena_portfolio'
+    password: 'dzsPWiNKPLbepmPbTrckvzPgYMetgxDJ',
+    database: 'railway'
+    port: '3306'
 });
 
 db.connect(err => {
