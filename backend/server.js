@@ -12,8 +12,8 @@ const db = mysql.createConnection({
     host: 'crossover.proxy.rlwy.net',
     user: 'root',
     password: 'dzsPWiNKPLbepmPbTrckvzPgYMetgxDJ',
-    database: 'railway'
-    port: '3306'
+    database: 'railway',
+    port: 3306
 });
 
 db.connect(err => {
