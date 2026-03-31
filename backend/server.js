@@ -38,7 +38,7 @@ app.post('/contact', (req, res) => {
 app.get('/',req,res) =>{
     res.send("server is running! frontend is ready to connect.");
 });
-const PORT=process.env.PORT||10000;
-app.listen(PORT, () => {
+const PORT=process.env.PORT||3000;
+app.listen(PORT,() => {
     console.log('Server running on PORT ${port}');
 });
