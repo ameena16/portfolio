@@ -35,8 +35,10 @@ app.post('/contact', (req, res) => {
         res.send("Message saved successfully ✅");
     });
 });
-
-// start server
-app.listen(3000, () => {
-    console.log('Server running on http://localhost:3000');
+app.get('/',req,res) =>{
+    res.send("server is running! frontend is ready to connect.");
+});
+const PORT=process.env.PORT||3000;
+app.listen(PORT, () => {
+    console.log('Server running on PORT ${port}');
 });
